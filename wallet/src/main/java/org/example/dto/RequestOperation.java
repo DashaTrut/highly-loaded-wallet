@@ -1,9 +1,6 @@
 package org.example.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NonNull;
+import lombok.*;
 import org.example.model.OperationType;
 
 import javax.validation.constraints.Positive;
@@ -12,6 +9,7 @@ import java.util.UUID;
 
 @Data
 @Builder
+@NoArgsConstructor
 @AllArgsConstructor
 public class RequestOperation {
     private UUID id;

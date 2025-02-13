@@ -37,7 +37,7 @@ public class WalletService {
         walletRepositoryJpa.save(wallet);
     }
 
-    public BigDecimal getBalance (UUID uuid){
+    public BigDecimal getBalance(UUID uuid) {
         Wallet wallet = checkWallet(uuid);
         return wallet.getBalance();
     }
